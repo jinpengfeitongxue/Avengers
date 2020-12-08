@@ -1,0 +1,8 @@
+.title{
+  font-size: x-large;
+  text-align: center;
+}
+.level-title{
+  font-size: large;
+  font-weight: bold;
+}

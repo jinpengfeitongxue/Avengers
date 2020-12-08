@@ -1,0 +1,138 @@
+/* miniprogram/pages/dd/dd.wxss */
+page{
+  background-color: #F2F5F5;
+}
+.box{
+  width: 100%;
+  height:46px ;
+  background-color: bisque;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+}
+.box view{
+  font-size: 22px;
+  margin-top: 1.5%;
+}
+.head{
+  width: 18%;
+  height: 46px;
+  float: left;
+  font-size: 18px;
+  margin-left: 12%;
+  position: relative;
+}
+.helse{
+  text-align: center;
+  width: 18%;
+  height: 36px;
+  background-color: red;
+  position: relative;
+  float: left;
+  font-size: 18px;
+  margin-left: 12%;
+  color: whitesmoke;
+  border-radius: 40px 40px 40px 40px ;
+  
+}
+.bdiv{
+  background-color:#F2F5F5;
+  margin-top: 5%;
+}
+.bdiv image{
+  width: 70px;
+  height: 70px;
+  margin-top: 2%;
+  border-radius:50%; 
+  float: left;
+}
+.bbdiv{
+  background-color: white;
+  margin-left: 5%;
+  margin-bottom: 40px;
+  width: 90%;
+  height: 170px;
+}
+.cout{
+  float: left;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 68%;
+}
+.price{
+  float: right;
+  margin-top: 1%;
+  font-size: 20px;
+  color: red;
+}
+.tex{
+  float: right;
+  color: green;
+  font-size: 15px;
+}
+.tmt{
+  float: left;
+}
+.bbdiv1{
+  width: 96%;
+  height: 28px;
+  margin-left: 2%;
+  border-bottom: grey solid 1px;
+}
+.bbdiv2{
+  float: left;
+  width: 96%;
+  height: 80px;
+  margin-left: 2%;
+  border-bottom: grey solid 1px ;
+}
+.bbdiv3{
+  width: 25%;
+  height: 25%;
+  float: right;
+  margin-top: 2%;
+  margin-right: 2%;
+  border: red solid 1px;
+  color: red;
+  text-align: center;
+  font-size: 150%;
+  border-radius: 25%/50%;
+}
+.bbdiv3-3{
+  width: 25%;
+  height: 25%;
+  float: right;
+  margin-top: 2%;
+  margin-right: 2%;
+  border: red solid 1px;
+  color: red;
+  text-align: center;
+  font-size: 150%;
+  border-radius: 25%/50%;
+}
+.bbdiv3-4{
+  width: 25%;
+  height: 25%;
+  float: right;
+  margin-top: 2%;
+  margin-right: 2%;
+  border: red solid 1px;
+  color: red;
+  text-align: center;
+  font-size: 150%;
+  border-radius: 25%/50%;
+}
+
+
+.bbdiv3 view{
+  
+  margin-top: 2%;
+  color: red;
+}
+.did{
+ float: left;
+ margin-top: 5%;
+ margin-left: 1%;
+ color: gainsboro;
+ font-size: 15px;
+}
+

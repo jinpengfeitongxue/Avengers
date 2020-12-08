@@ -1,0 +1,41 @@
+<!-- 信息部分 --> 
+<form bindsubmit="saveAddr">
+  <view class = "info">
+    <!-- 姓名部分 -->
+    <view class = "item">
+      <text>姓名</text>
+      <view class = "right">
+        <input type="text" name = "name" placeholder="请填写收货人姓名"   />
+      </view>
+    </view>
+
+    <!-- 电话部分 -->
+    <view class = "item">
+      <text>电话</text>
+      <view class = "right">
+        <input name="phone" type="number" placeholder="请填写收货手机号"  />
+      </view>
+    </view>
+
+    <!-- 收货地址部分 -->
+    <view class = "item">
+      <text>地址</text>
+      <!-- <view class = "right1" bindtap='cilickaddress'> -->
+      <view class = "right1">
+        <input name="address" type="text" placeholder="请填写收货地址" />
+      </view>
+    </view>
+
+    <!-- 详细地址部分 -->
+    <view class = "item">
+      <text>详细地址</text>
+      <view class = "right">
+        <input name="door_card" type="text" placeholder="例：10栋5层502室"   />
+      </view>
+    </view>
+  </view>
+<!-- 信息部分end -->
+  <view class='save'>
+    <button class="savebt" type="primary" formType="submit" hover-class="none">保存</button>
+  </view>
+</form>

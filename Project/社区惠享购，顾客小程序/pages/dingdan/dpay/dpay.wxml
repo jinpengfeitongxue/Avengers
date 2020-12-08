@@ -1,0 +1,14 @@
+<!--miniprogram/pages/dpay/dpay.wxml-->
+<view class="tit">
+  <text>你的订单</text>
+</view>
+<view wx:for="{{goods}}">
+  <view class="goods">
+    <image src="{{item.image}}"></image>
+    <view class="t1">{{item.title}} X {{item.num}}</view>
+    <view class="t2">${{item.price}}</view>
+  </view>
+</view>
+<view class="ff">
+<view bindtap="gopay" class="mon">{{pp}}</view>
+</view>

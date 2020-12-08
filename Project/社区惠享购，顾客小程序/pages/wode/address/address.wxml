@@ -1,0 +1,13 @@
+<view class='container'>
+  <view class = "item" wx:for="{{list}}" wx:key="" wx:for-index="index" data-addinfo="{{item}}">
+    <text class='address'>{{item.uadd}}{{item.uaddde}}</text>
+    <text class='name'>{{item.uname}}</text>
+    <text class='tel'>{{item.utel}}</text>
+    <image class="delete" src="/images/my/delete.jpg"  data-id="{{item.uid}}" bindtap="delAddr">删除</image>
+  </view>
+  <image class='eidt' src = "/images/my/logo.jpg"/>
+</view>
+<view class = "add" bindtap = "addAddr">
+  <image class = "left" src = "/images/my/addLoc.jpg" mode = "widthFix" />
+  <view class = "text">新增个人地址</view>
+</view>

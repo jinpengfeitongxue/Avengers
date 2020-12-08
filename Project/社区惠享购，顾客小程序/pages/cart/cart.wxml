@@ -1,0 +1,32 @@
+<!-- 购物车 -->
+<view id="cart">
+  <wxs module="filters" src="./filter.wxs"></wxs>
+  <scroll-view scroll-y="true" class="scroll">
+    <view class="cartList" wx:if="{{onShow}}">
+    <block wx:for="{{CartDataList}}" wx:key="index">
+      <cartListItem cartGoodsObj="{{item}}" bindDelClick="delClick" bindBoxClick="selectClick" />
+    </block>
+  </view>
+  </scroll-view>
+
+  <view class="cart-buy">
+    <checkbox class="allCheck" checked="{{selectAll}}" bindtap="AllBtnClick">全选</checkbox>
+    <view class="buy-box">
+      <view class="total">
+        <text>合计</text>
+        <text>￥{{ filters.toFix(sum) }}</text>
+      </view>
+      <view class="to-buy" bindtap="toBuyClick">
+        结算
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{!onShow}}" class="noneData">
+    <text> 购物车啥也没有，去逛逛吧</text>
+    <view class="buttom" bindtap="goShooping">去逛逛</view>
+  </view>
+
+</view>
+
+

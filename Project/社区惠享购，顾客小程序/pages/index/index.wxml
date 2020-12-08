@@ -1,0 +1,40 @@
+<view>
+  <view wx:if="{{ !userId }}">
+    <view class="bg"></view>
+    <button type="primary" style="width:80%;margin-top:10%" open-type="getUserInfo"
+      bindgetuserinfo="getUserInfo">微信登录</button>
+  </view>
+  <view wx:else>
+    <swiper class="imageContainer" bindchange="handleChange" previous-margin="50rpx" next-margin="50rpx" autoplay
+      circular>
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item class="item">
+          <image mode="aspectFill" src="{{item}}" class="itemImg {{currentIndex == index ? 'active': ''}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="container">
+      <text class="text" decode="{{true}}">--&nbsp;&nbsp;&nbsp;品味多种美&nbsp;&nbsp;&nbsp;生活要领鲜&nbsp;&nbsp;&nbsp;--</text>
+      <view class="div" wx:for="{{shopdata}}" wx:key="index">
+        <view class="shop-all">
+          <image src="{{item.spic}}"></image>
+          <view>
+            <text>\n</text>
+            <text class="shop">{{item.sshopname}}</text>
+          </view>
+          <view class="shop-sale-condition">
+            <text class="bord">特价</text>
+            <text class="bord">支持预定</text>
+            <text class="bord">支持自取</text>
+            <text>\n</text>
+            <text>\n</text>
+            <button size="mini" bindtap="goshop" data-id="{{item.sid}}" style="margin-left:18%">
+              进入超市
+            </button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

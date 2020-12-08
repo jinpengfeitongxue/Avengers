@@ -1,0 +1,13 @@
+<!--pages/shopdetail/shopdetail.wxml-->
+<view class="container">
+	<image class="shopLogo" mode="aspectFill" src="{{shopdata[i].spic}}"></image>
+  <view class="info">
+    <van-cell size="large" icon="shop-collect-o" title="{{shopdata[i].sshopname}}" label="{{shopdata[i].sadd}}" />
+    <van-cell size="large" icon="hot-o" title="本店特色" label="这是一家专门卖优质商品的超市，值得一买" />
+    <van-cell size="large" icon="clock-o" title="营业时间" value="8:00-24:00" />
+    <van-cell size="large" icon="phone-o" title="联系我们" value="13545607694" is-link bind:click="phoneCall" />
+    <van-cell size="large" icon="location-o" title="查看地图" value="导航到店" is-link bind:click="guideNow" />
+  </view>
+	<map id="map" class="maMap" latitude="37.995317" longitude="114.525274"  show-location enable-3D	show-compass show-scale	enable-rotate	enable-traffic />
+</view>
+

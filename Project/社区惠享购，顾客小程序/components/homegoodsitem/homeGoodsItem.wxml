@@ -1,0 +1,24 @@
+<view class="home-goods-item" bindtap="HomeGoodsTap">
+	<view class="content">
+		<image src="{{goodsitem.show.img ? goodsitem.show.img : goodsitem.img}}" lazy-load="true"></image>
+		<view class="font">
+			<view class="name">
+				{{goodsitem.title}}
+			</view>
+			<view class="price">
+				￥{{goodsitem.price}}
+			</view>
+			<view class="text">
+				<view>
+					<image src="../../images/home/love.svg"></image>
+					<text>{{goodsitem.cfav}}</text>
+				</view>
+
+				<view>
+          <image src="../../images/home/xiaolian.svg"></image>
+					<text>{{goodsitem.sale}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

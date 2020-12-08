@@ -1,0 +1,15 @@
+<!--pages/wode/wode.wxml-->
+<view>
+  <view class="showUserInfo">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+  <navigator url="/pages/wode/allList/allList"><image src="/images/my/list.jpg"></image>全部订单</navigator>
+  <navigator url="/pages/wode/address/address"><image src="/images/my/address.jpg"></image>收货地址</navigator>
+  <navigator url="/pages/wode/aboutUs/aboutUs"><image src="/images/my/about.jpg"></image>关于我们</navigator>
+</view>

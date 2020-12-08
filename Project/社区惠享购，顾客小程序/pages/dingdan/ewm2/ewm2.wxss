@@ -1,0 +1,46 @@
+/* pages/ewm2/ewm2.wxss */
+.ewm{
+  margin-top: 10%;
+  margin-left: 25%;
+  width:200px;
+  height:200px;
+  float: left;
+}
+.t1{
+  font-size: 40px;
+  color: orange;
+  margin-left: 35%;
+}
+.t2{
+  font-size: 35px;
+  margin-left: 28%;
+}
+.out{
+  float: left;
+  margin-left: 80px;
+  margin-top: -60px;
+  font-size: 50px;
+  color: red;
+}
+.ss{
+  width: 100%;
+}
+.in{
+  width: 100%;
+  margin-top: 50px;
+  font-size: 40px;
+  color: red;
+  float: left;
+  text-align: center;
+}
+.but{
+  width: 80%;
+  height: 40px;
+  margin-left:10% ;
+  margin-top: 100px;
+  color:rgb(239, 255, 98);
+  font-size: 30px;
+  background-color: salmon;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+}

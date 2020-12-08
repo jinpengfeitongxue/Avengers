@@ -1,0 +1,8 @@
+/* pages/notice/detail001.wxss */
+.content {
+  padding: 32rpx;
+  line-height: 64rpx;
+}
+.content image {
+  max-width: 100%;
+}

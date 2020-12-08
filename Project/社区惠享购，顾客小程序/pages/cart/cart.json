@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cartListItem":"../../components/cartlistitem/cartListItem"
+  },
+    "enablePullDownRefresh":false
+}
