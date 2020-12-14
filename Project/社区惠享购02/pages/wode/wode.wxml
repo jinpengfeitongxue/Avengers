@@ -1,0 +1,35 @@
+<!--pages/wode/wode.wxml-->
+<view>
+  <view class="showUserInfo">
+    <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class="wo-all">
+    <!-- <view>
+      <navigator url="/pages/wode/allList/allList">
+        <image src="/images/my/dingdan.png"></image>
+        <text>全部订单</text>
+      </navigator>
+    </view> -->
+    <view>
+      <navigator url="/pages/wode/address/address">
+        <image src="/images/my/address.png"></image>
+        <text>收货地址</text>
+      </navigator>
+    </view>
+    <view>
+      <navigator url="/pages/wode/aboutUs/aboutUs">
+        <image src="/images/my/about.png"></image>
+        <text>关于我们</text>
+      </navigator>
+    </view>
+    <view class="women">
+      <navigator url="/pages/wode/problem/problem">
+        <image src="/images/my/fankui.png"></image>
+        <text>客服反馈</text>
+      </navigator>
+    </view>
+  </view>
+</view>

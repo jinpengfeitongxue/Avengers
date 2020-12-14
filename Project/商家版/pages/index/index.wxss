@@ -1,0 +1,69 @@
+.home .add{
+  position: fixed;
+  width: 100rpx;
+  height: 100rpx;
+  right: 0;
+  bottom: 5%;
+}
+.A_title{
+  margin: 0 auto;
+  padding: 0;
+  width: 94%;
+  height: 100rpx;
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 50rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.all{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+.shop{
+  width: 100%;
+  height: 200rpx;
+  margin-top: 20rpx;
+  background-color: #f1f1f1;
+}
+.shop image{
+  float: left;
+  width: 40%;
+  height: 200rpx;
+}
+.message{
+  width: 45%;
+  height: 200rpx;
+  margin-left: 55%;  
+}
+.message view{
+  height: 40rpx;
+  margin-top: 5rpx;
+}
+.message .title{
+  padding-top: 10rpx;
+  font-size: 40rpx;
+  text-align: left;
+  line-height: 40rpx;
+}
+.message .residue{
+  font-size: 30rpx;
+  color:#999;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  text-align: left;
+}
+.message .price{
+  font-size: 35rpx;
+  line-height: 40rpx;
+  text-align: left;
+  color: #f45044;
+}
+.message button{
+  float: right;
+  margin-right: 20rpx;
+  color: #fff;
+  background-color: #f45044;
+  border-radius: 40%;
+}

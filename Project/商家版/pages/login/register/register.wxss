@@ -1,0 +1,25 @@
+.tips{
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.info{
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+text{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.right{
+  float: right;
+  margin-right: auto;
+}
+button{
+  margin-bottom:30rpx;
+}
+.shopAddress input{
+  height: 100rpx;
+}

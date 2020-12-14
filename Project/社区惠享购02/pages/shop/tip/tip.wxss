@@ -1,0 +1,109 @@
+/* pages/tip/tip.wxss */
+page{
+  background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607492285676&di=ab65920f3594bf8ee21838208f7f9a9e&imgtype=0&src=http%3A%2F%2Ftrademark-pics-search.oss-cn-shanghai.aliyuncs.com%2Fsmall%2Ft4517773606323200.jpg) ;
+
+}
+.box-0{
+  z-index: -1;
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  float: left;
+}
+.show1{
+  display: none;
+}
+.show2{
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: fixed;
+  display: block;
+}
+.v1{
+  float: left;
+  margin-left: 40%;
+  text-align: center;
+  margin-bottom: 10%;
+  width: 20%;
+  height: 100%;
+  font-size: 30px;
+  color:white;
+}
+.v2{
+  float: left;
+  position: relative;
+  width: 80%;
+  height: 20%;
+  margin-top: 2%;
+  margin-left: 10%;
+  font-size: 26px;
+  color:white;
+}
+.vv{
+  position: relative;
+  float: right;
+  height: 20%;
+  margin-top: 2%;
+  font-size: 14px;
+  color:white;
+
+}
+.v3{
+  float: left;
+  margin-top: 30%;
+  margin-left: 35%;
+  width: 40%;
+  height: 20%;
+  font-size: 40px;
+  color:#D1E231;
+}
+.d0{
+  width: 100%;
+  height: 20%;
+  margin-top: 5%;
+}
+.d1{
+  float: left;
+  z-index: 1;
+  width: 100%;
+}
+.box-1{
+  float: left;
+  width: 100%;
+  height: 60%;
+  background-color: rgb(189, 186, 186);
+  opacity: 0.4;
+}
+.box-2{
+  float: left;
+  opacity: 1;
+  margin-top: 0%;
+  width: 100%;
+  height: 40%;
+  background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607492285676&di=ab65920f3594bf8ee21838208f7f9a9e&imgtype=0&src=http%3A%2F%2Ftrademark-pics-search.oss-cn-shanghai.aliyuncs.com%2Fsmall%2Ft4517773606323200.jpg) ;
+}
+.text{
+  opacity: 1;
+  background-color: white;
+  float: left;
+  margin-top: 0%;
+  border: springgreen 3px solid;
+  width: 100%;
+  height: 60%;
+}
+.but{
+  opacity: 1;
+  float: right;
+  position: absolute;
+  margin-top: 50%;
+  margin-left: 25%;
+  text-align: center;
+  width: 50%;
+  height: 5%;
+  font-size: 18px;
+  color: white;
+  background-color: burlywood ;
+}

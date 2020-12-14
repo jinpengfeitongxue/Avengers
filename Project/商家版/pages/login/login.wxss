@@ -1,0 +1,126 @@
+.login{
+  margin-top: 200rpx;
+}
+input{
+  font-size: large;
+  margin-left: 160rpx;
+  width: 425rpx;
+  display: block;
+  float: left;
+  height: 75rpx;
+  border: 1rpx solid red;
+  text-align: center;
+}
+.empty{
+  padding-top: 150rpx;
+}
+
+/* 商家信息 */
+.backgroundImg{
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  opacity: 0.8;
+  background: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2196923619,3160100930&fm=26&gp=0.jpg) no-repeat center center; 
+  background-size: cover;   
+  background-repeat:repeat;
+}
+.container{
+  padding:0rpx 0;
+}
+.item{
+  width: 100%;
+  position: relative;
+}
+.shopname{
+  margin-left: 30rpx;
+  margin-top: 550rpx;
+  font-size:55rpx;
+  font-weight: bolder;
+  text-overflow:ellipsis;
+}
+.address{
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  font-size:40rpx;
+  font-weight: bold;
+}
+.name{
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  font-size:40rpx;
+  font-weight: bold;
+}
+.tel{
+  margin-left: 30rpx;
+  font-size:40rpx;
+  font-weight: bold;
+}
+.pic{
+  float: left;
+  width: 100%;
+}
+/* 留言 */
+
+/* 注销 */
+.delete{
+  position: fixed;
+  bottom: 20rpx;
+  width:230rpx;
+  margin-left: 20rpx;
+  background-color: red;
+  border: solid red 3rpx;
+  border-radius: 25rpx;
+  text-align: center;
+}
+.delete image{
+  padding-left: 15rpx;
+  width:47rpx;
+  height:40rpx;
+}
+.delete text{
+  font-size: 45rpx;
+  margin-left: 10rpx;
+  line-height: 80rpx;
+}
+/* 查看留言 */
+.view-message{
+  position: fixed;
+  bottom: 20rpx;
+  width:230rpx;
+  margin-left: 260rpx;
+  background-color: lightgreen;
+  border: solid lightgreen 3rpx;
+  border-radius: 25rpx;
+  text-align: center;
+}
+.view-message image{
+  width:47rpx;
+  height:40rpx;
+}
+.view-message text{
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-left: 10rpx;
+  line-height: 80rpx;
+}
+/* 退出登录 */
+.sign-out{
+  position: fixed;
+  bottom: 20rpx;
+  width:230rpx;
+  right: 20rpx;
+  background-color: lightblue;
+  border: solid blue 3rpx;
+  border-radius: 25rpx;
+  text-align: center;
+}
+.sign-out image{
+  width:47rpx;
+  height:40rpx;
+}
+.sign-out text{
+  font-size: 40rpx;
+  margin-left: 10rpx;
+  line-height: 80rpx;
+}

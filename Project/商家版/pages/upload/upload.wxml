@@ -1,0 +1,50 @@
+<!--商品发布-->
+<form bindsubmit="formSubmit">
+  <!--商品名称-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>商品名称:</text>
+      <input name="gtitle" type='text' value='{{gtitle}}' bindblur='titleBlur'></input>
+    </view>
+  </view>
+  <!--商品价格-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>商品价格:</text>
+      <input name="gprice" type='number' value='{{gprice}}' bindblur='priceBlur'></input>
+    </view>
+  </view>
+  <!--商品余量-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>商品剩余量:</text>
+      <input name="gresidue" type='number' value='{{gresidue}}' bindblur='residueBlur'></input>
+    </view>
+  </view>
+  <!--商品单位-->
+  <view class='title'>
+    <view class='title_text'>
+      <text>商品单位:</text>
+      <input name="gunit" type='number' value='{{gunit}}' bindblur='unitBlur'></input>
+    </view>
+  </view>
+  <!--上传图片-->
+  <view class='upImv'>
+    <view class='upImv_text'>详情图片上传</view>
+    <view class="addImv">
+      <!--这个是已经选好的图片-->
+      <view wx:for="{{detail}}" wx:key="key" class="upFile" bindtap="showImageDetail" style="border-radius: 5px" data-id="{{index}}">
+        <image class="itemImv" src="{{item}}"></image>
+        <view class="closeView" catchtap="deleteImvDetail">
+          <image class="closeImv" src="../../images/delete.png" mode="scaleToFill" data-id="{{index}}"></image>
+        </view>
+      </view>
+      <!--这个是选择图片-->
+      <view class="chooseView" bindtap="chooseImageTap" wx:if="{{chooseViewShowDetail}}">
+        <image class="chooseImv" src="../../images/add.png"></image>
+      </view>
+    </view>
+  </view>
+  
+  <button form-type='submit' class='sureRelease' style="width:100%">确认发布</button>
+</form>

@@ -1,0 +1,21 @@
+page{
+  background-color: #d4f6f7;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.img{
+  width: 90%;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  height: 1000rpx;
+}
+.text{
+  width: 100%;
+  background: #d4f6f7;
+  text-align: center;
+  position: absolute;
+  top: 85%;
+}
