@@ -1,0 +1,75 @@
+/* pages/friend/friend.wxss */
+.img{
+  text-align: center;
+  background-color: #F6F6F6;
+}
+.box{
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+.touxiang{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+.title{
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 90px;
+  margin-top: -65px;
+}
+.time{
+  color:#7A7B7B;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+.content{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 3%;
+}
+.pic1{
+  width: 220rpx;
+  height: 220rpx;
+  margin-left: 3%;
+  padding-bottom: 3%;
+}
+.pic2{
+  width: 220rpx;
+  height: 220rpx;
+  margin-left: 10px;
+  padding-bottom: 3%;
+}
+.pic3{
+  width: 220rpx;
+  height: 220rpx;
+  margin-left: 10px;
+  padding-bottom: 3%;
+}
+.other{
+  display: none;
+  width: 30px;
+  height: 2px;
+}
+.i{
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+}
+.i image{
+  width: 50px;
+  height: 50px;
+}
+.it{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 8%;
+  top: 20%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}

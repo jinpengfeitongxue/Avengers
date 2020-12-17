@@ -1,0 +1,10 @@
+<!--pages/ewm/ewm.wxml-->
+<image src="/icon/shop.jpg" class="ss"></image>
+<view class="txt">
+  <view class="t1">提货码</view>
+  <view class="t2">{{dthm.thm}}</view>
+</view>
+<view class="in">
+  <text>请前往{{shopname}}提取您的商品</text>
+</view>
+<view class="but" bindtap="gget">{{get}}</view>

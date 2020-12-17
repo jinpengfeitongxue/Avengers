@@ -1,0 +1,43 @@
+/* pages/ddxq/ddxq.wxss */
+.goods{
+  border: red 3px solid;
+  border-radius: 20px 20px 20px 20px;
+  width: 90%;
+  margin-left: 5%;
+  height: 150px;
+  background-color: #F2F5F5;
+  margin-bottom: 10px;
+}
+.goods image{
+  margin-top: 2%;
+  margin-left: 2%;
+  float: left;
+  width: 40%;
+  height: 90%;
+}
+.goods view{
+  font-size: 25px;
+  float: left;
+}
+.t1{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.t2{
+  float: left;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 70px;
+  color: red;
+}
+.t3{
+  width: 80%;
+  height: 40px;
+  margin-left:10% ;
+  margin-top: 100px;
+  color:red;
+  font-size: 30px;
+  background-color: #F2F5F5;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+}

@@ -1,0 +1,56 @@
+/* pages/wode/wode.wxss */
+.showUserInfo{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 130rpx 0;
+  background-color: #4C9673;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  font-size: large;
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.wo-all{
+  width: 96%;
+  margin-left: 2%;
+}
+.wo-all view{
+  position: relative;
+  width: 32%;
+  height: 250rpx;
+  display: inline-block;
+  margin-left: 1%;
+  margin-top: 20rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+  border-right: 1rpx solid #f1f1f1;
+}
+.wo-all image{
+  position: absolute;
+  width: 60%;
+  height: 150rpx;
+  margin-left: 20%;
+}
+.wo-all text{
+  position: absolute;
+  display: block;
+  margin-top: 200rpx;
+  left: 25%;
+}

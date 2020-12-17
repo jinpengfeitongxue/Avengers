@@ -1,0 +1,40 @@
+<!-- 初始时 或者 数据库中没有对应id时 -->
+<view wx:if="{{i===-1?true:false || i==list.length?true:false}}">
+  <form bindsubmit="Login">
+    <view class="login">
+      <input name="shopId" type="text" placeholder="请输入您的商店id"/>
+      <view class="empty"></view>
+      <view class="right">
+        <button type="primary" formType="submit" plain="true">登录</button>
+      </view>
+    </view>
+  </form>
+  <button bindtap="shopRegister" type="primary">注册</button>
+</view>
+<!-- 数据库中存在对应id -->
+<view wx:if="{{list[i].sid}}">
+  <view class='container'>
+  <view class="backgroundImg"></view>
+    <view class = "item" data-addinfo="{{item}}"> 
+      <image class='pic' src="{{list[i].spic}}" mode="widthFix"></image>
+      <view class='shopname'>{{list[i].sshopname}}</view>
+      <view class="address">{{list[i].sadd}}</view>
+      <view class='name'>
+        {{list[i].sname}}
+        <text class='tel'>{{list[i].stel}}</text>
+      </view>
+      <view class="view-message" bindtap="viewMessage">
+        <image src="/images/shop-info/view-message.jpg"></image>
+        <text>查看留言</text>
+      </view>
+      <view class="delete" data-id="{{list[i].sid}}" bindtap="delShop">
+        <image src="/images/shop-info/logout.jpg"></image>
+        <text>注销</text>
+      </view>
+      <view class="sign-out" bindtap="outShop">
+        <image src="/images/shop-info/sign-out.jpg"></image>
+        <text>退出登录</text>
+      </view>
+    </view>
+  </view>
+</view>

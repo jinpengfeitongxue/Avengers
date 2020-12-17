@@ -1,0 +1,13 @@
+<!--pages/ddxq/ddxq.wxml-->
+<wxs module="filters" src="./filter.wxs"></wxs>
+
+<view wx:for="{{goods}}">
+<view class="goods">
+<image src="{{item.image}}"></image>
+<view class="t1">{{item.title}}</view>
+<view class="t2">{{item.num}}X￥{{item.price}}/{{item.unit}}</view>
+</view>
+</view>
+<view class="t3">共计￥{{filters.toFix(price)}}</view>
+
+

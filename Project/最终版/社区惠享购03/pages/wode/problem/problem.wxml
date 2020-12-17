@@ -1,0 +1,7 @@
+<view class="container">
+  <image src="../../../images/my/bg.png" mode="aspectFit" class="img" ></image>
+  <view class="text" decode="{{true}}">
+    <view decode="{{true}}">地址：石家庄市南二环裕华区河北师范大学</view>
+    <view>客服：13290410911</view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view class="cart-item" bindtap="toDetail">
+  <view class="content">
+    <checkbox checked="{{cartGoodsObj.gstatus}}" catchtap="checkBoxClick"/>
+    <image src="{{cartGoodsObj.image}}"></image>
+    <view class="goodsFont">
+      <view class="name">{{cartGoodsObj.title}}</view>
+      <view class="price">￥{{cartGoodsObj.price}}/{{cartGoodsObj.unit}}</view>
+    </view>
+    <view class="count-box">
+      <text class="count">x{{cartGoodsObj.num}}</text>
+    </view>
+    </view>
+    <view class="del" catchtap="delClick">
+      删除
+    </view>
+</view>

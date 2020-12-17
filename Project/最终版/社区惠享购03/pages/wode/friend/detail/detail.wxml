@@ -1,0 +1,44 @@
+<!--pages/wode/friend/detail/detail.wxml-->
+<view class="box" wx:for="{{detail}}" wx:key="index" wx:for-index='idx'>
+  <image class="touxiang" src='{{item.shimg}}' data-nick='{{item.shname}}' bindtap="go"></image>
+  <view class="title">{{item.shname}}</view>
+  <view class="time">{{item.stime}}</view>
+  <view class='content'><text>{{item.shtext}}</text></view>
+  <view class="pic" wx:if="{{item.imgid}}">
+    <image src="{{item.pic1}}" class="pic1" data-src='{{item.pic1}}' bindtap='previewImg'></image>
+    <image src="{{item.pic2}}" class="pic2" data-src='{{item.pic2}}' bindtap='previewImg'></image>
+    <image src="{{item.pic3}}" class="pic3" data-src='{{item.pic3}}' bindtap='previewImg'></image>
+  </view>
+  <view class="other" wx:else></view>
+  <view>
+    <view wx:if="{{addBookrackSucceed==false}}">
+      <view bindtap="chooseAddBookrack">
+        <view>
+          <image src="{{iconAddBookrackSucceed}}" class="icon1"></image>
+        </view>
+      </view>
+    </view>
+    <view wx:else>
+     <view bindtap="chooseAddBookrack">
+        <image src="{{iconAddBookrack}}" class="icon1"></image>
+     </view>
+    </view>
+    <image src="../../../../icon/评论.png" class="icon2" bindtap="on" data-id='{{item.shid}}'></image>
+  </view>
+  <view wx:if="{{comment=='failed register'}}">
+  </view>
+  <view wx:else>
+    <view wx:for="{{comment}}" wx:key="key">
+      <view class="name"><text class="con">{{item.cname}}</text>   :   <text>{{item.ctext}}</text></view>
+      </view>
+  </view>
+</view>
+<view class="{{show?'show1':'show2'}}">
+  <view>
+    <form bindsubmit="formSubmit">
+     <textarea class="banner" placeholder="说点什么吧……" value='{{ctext}}' bindblur='textBlur'></textarea>
+     <button class="btn1" form-type='submit' size="mini">评论</button>
+     <button class="btn2" size="mini" bindtap="can">取消</button>
+    </form>
+  </view>
+</view>

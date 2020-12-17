@@ -1,0 +1,128 @@
+/* pages/wode/friend/other/other.wxss */
+.img{
+  text-align: center;
+  background-color: #F6F6F6;
+}
+.it{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 8%;
+  top: 20%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.box{
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+.touxiang{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+.title{
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 90px;
+  margin-top: -65px;
+}
+.time{
+  color:#7A7B7B;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+.content{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 3%;
+}
+.pic1{
+  width: 220rpx;
+  height: 220rpx;
+  margin-left: 3%;
+  padding-bottom: 3%;
+}
+.pic2{
+  width: 220rpx;
+  height: 220rpx;
+  margin-left: 10px;
+  padding-bottom: 3%;
+}
+.pic3{
+  width: 220rpx;
+  height: 220rpx;
+  margin-left: 10px;
+  padding-bottom: 3%;
+}
+.other{
+  display: none;
+  width: 30px;
+  height: 2px;
+}
+.icon1{
+  width: 30px;
+  height: 30px;
+  margin-left: 75%;
+}
+.icon2{
+  width: 30px;
+  height: 30px;
+  margin-left:87%;
+  display: block;
+  margin-top: -30px;
+}
+.name{
+  padding-bottom: 10px;
+  width: 90%;
+  margin-left: 5%;
+  color: #000;
+}
+.con{
+  color: royalblue;
+}
+.show1{
+  display: none;
+}
+.show2{
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: #eee;
+  position: fixed;
+  bottom: 0px;
+}
+.banner{
+  width: 70%;
+  margin-top: 3px;
+  margin-left: 5%;
+  height: 85px;
+  border: 1px solid #7A7B7B;
+}
+.btn1{
+  background-color: #7a94e0;
+  display: block;
+  position: fixed;
+  bottom: 55px;
+  left: 78%;
+}
+.btn2{
+  background-color: rgba(235, 48, 48, 0.753);
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  left: 78%;
+}
+.it{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 8%;
+  top: 20%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}

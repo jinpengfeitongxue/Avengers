@@ -1,0 +1,123 @@
+<!--pages/shop/shop.wxml-->
+<view  class="notice">
+  <van-notice-bar
+      left-icon="volume-o"
+      text="折扣期间，欢迎新老顾客光临"
+      speed='25'
+      bind:click='firstLink'
+  >  
+  
+  </van-notice-bar>
+</view>
+
+<view  class="box">
+  <view class="shop-name">
+    <view class="name">{{shopdata[0].sshopname}}</view>
+    <view class="tip" bindtap="totip">
+      <image src="../../images/images/liuyan.png" class="liuyan"></image>
+      <view>用户留言</view>
+    </view>
+    <view class="tel" bindtap="totel">
+      <image src="../../images/images/tel.png" class="lianxi"></image>
+      <view>联系店家</view>
+    </view>
+  </view>
+  <view class="distance-bar">
+    <view bindtap="firstclick" hover-class="none">
+      <view class="shop-message">
+        <view class="message">查看门店信息</view>
+        <van-icon name="arrow" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="box1">
+  <view class="box-1">  
+    <van-sidebar  bindtap="tap">
+        <van-sidebar-item title="优惠商品" />
+    </van-sidebar>
+   
+  </view>
+  <scroll-view class="box-2" scroll-y="true" scroll-top="20px">
+    <swiper class="swiper1" indicator-dots="true" autoplay="true" circular="true">
+      <block wx:for='{{goodlist}}' wx:key='swiper1' wx:for-item="item">
+      <swiper-item >
+        <image  mode="aspectFill" src="{{item.gimgsrc}}" />
+      </swiper-item>
+      </block>
+    </swiper>
+    <view class="goods">
+      <block wx:for='{{goodlist}}' wx:key='goods' wx:for-item="item">
+      <view class="menuList menuList2" >
+          <image mode="widthFix" src="{{item.gimgsrc}}" ></image>
+          <view style="min-width: 65%;">
+            <view class="P_message">
+                <view>{{item.gtitle}}</view>
+                <view class="P_small">剩余：{{item.gresidue}}{{item.gunit}}</view>
+            </view>
+            <view class="P_bottom">
+                <view style="width:45%;text-align: left;">
+                  <text class="price">¥{{item.gprice}}/{{item.gunit}}</text>
+                </view>          
+            </view>
+            <view class="goods-btn" >
+                    <van-button  custom-style="width:40px" size="small" color="#4C9673" round bindtap="share" data-id="{{item.gid}}">{{item.gbutton}}
+                    </van-button>
+            </view>
+          </view>
+      </view>
+      </block>       
+    </view>
+  </scroll-view>
+</view>
+<!-- 底部弹出 -->
+<view class="hide{{showView?'':'show'}}">
+  <view class="shade">
+    <view class='contsup' bindtap='close'>
+    </view>
+    <view class="conts">
+          <view class='tophead'>
+              <view class='topimg'>
+                <image src='{{goodlist[i].gimgsrc}}'></image>
+              </view>
+              <view class='topright'>
+                <view>{{goodlist[i].gtitle}}</view>
+                <view class='imgcha'>
+                    <view style='color:#ef5426;'>¥{{goodlist[i].gprice}}/{{goodlist[i].gunit}}</view>
+                </view>
+                <view style='margin:10rpx 0;color:#999999;'>库存:{{goodlist[i].gresidue}}</view>
+              </view>
+          </view>
+          <view class="cont-buyall">
+              <view class="cont-buynum">购买数量</view>
+              <!-- 主容器 -->
+              <view class="stepper">
+                  <!-- 减号 -->
+                  <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+                  <!-- 数值 -->
+                  <input type="number" id="inp" value="{{num}}" ></input>
+                  <!-- 加号 -->
+                  <text class="normalPlus" bindtap="bindPlus">+</text>
+              </view>
+          </view>
+          <view class='yesyes' catchtap='addCartClick'>
+           确定
+          </view>                                                       
+    </view>
+  </view>
+</view>
+<view class="hide{{showVie?'':'show'}}">
+  <view class="shade">
+    <view class='contsup' bindtap='clos'>
+    </view>
+    <view class="conts">
+      <view class="con1"><text>客服工作时间:早8:00-晚23:00</text></view>
+      <view class="con2"><text>如有客服回复不及时情况,留言即可,</text></view>
+      <view class="con4"><text>客服人员看到后会及时回复您</text></view>
+      <view class="con3"><text>联系电话</text>    :    <text class="c">{{tel}}</text></view>                                             
+    </view>
+  </view>
+</view>
+
+

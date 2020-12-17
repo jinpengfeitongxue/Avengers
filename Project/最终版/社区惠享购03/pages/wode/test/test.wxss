@@ -1,0 +1,83 @@
+page{
+  background-color: #D3CECA;
+}
+.img{
+  width: 100%;
+  height:518px;
+  background: #D3CECA;
+}
+.banner{
+  border: solid 2px #D3CECA;
+  width: 90%;
+  height: 40%;
+  position: absolute;
+  top: 20px;
+  left: 5%;
+}
+.upImv {
+  background-color: white;
+  width: 100%;
+  margin-top: 10px;
+} 
+/*选择图片View*/
+.addImv {
+  background-color: #f2f6f9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+/*添加图片*/ 
+.addImv .chooseView {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx 20rpx;
+  background-color: #f2f6f9;
+  border: 1px dashed lightgray;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 30rpx;
+  margin-top:-85%;
+} 
+.addImv .chooseImv {
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 35rpx;
+}
+/*已选择的图片*/ 
+.addImv .upFile {
+  width:200rpx;
+  height: 200rpx;
+  position: relative;
+  margin-top: -86%;
+  margin-left: 5%;
+  border: 1px solid #c0ccda;
+} 
+.addImv .upFile .itemImv {
+  width: 200rpx;
+  height: 200rpx;
+} 
+.addImv .upFile .closeView {
+  position: absolute;
+  top: 200rpx;
+  width: 100%;
+  height: 40rpx;
+  background-color:rgba(0,0,0, 0.5);
+} 
+.addImv .upFile .closeImv{
+  position: absolute;
+  left:85rpx;
+  width: 30rpx;
+  height: 40rpx;
+}
+.btn{
+  width: 80%;
+  margin-left: 10%;
+  height: 40px;
+  margin-top: -80px;
+  background-color: transparent;
+  color:rgba(255, 255, 255, 0.8);
+  border: solid 1px rgba(255, 255, 255, 0.8);
+  text-align: center;
+}

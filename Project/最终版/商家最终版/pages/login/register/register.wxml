@@ -1,0 +1,46 @@
+<form bindsubmit='register'>
+  <!-- 商店信息 -->
+  <view class="corporateInfo">
+    <view class="tips">商店信息</view>
+    <view class="info">
+      <text>商店名称：</text>
+      <view class="right">
+        <input name='shopname' placeholder="请输入商店名称" type='text' />
+      </view>
+    </view>
+    <view class="info">
+      <text>法人姓名：</text>
+      <view class="right">
+        <input name='name' placeholder="请输入姓名" type='text' />
+      </view>
+    </view>
+    <view class="info">
+      <text>法人联系电话：</text>
+      <view class="right">
+        <input name='telephone' placeholder="请输入电话号码" type='text' />
+      </view>
+    </view>
+  </view>
+
+  <!-- 地址信息 -->
+  <view class="shopAddress">
+    <view class="tips">商店地址信息</view>
+    <button bindtap='getLocation' type="primary" plain="true">点击获取位置</button>
+    <text>商店地址：</text>
+    <input name='address' placeholder="请点击上方按钮获取位置信息" type='text' value='{{sadd}}'/>
+    <text>商店经度：</text>
+    <input name='longitude' placeholder="请点击上方按钮获取位置信息" type='text' value='{{longitude}}'/>
+    <text>商店纬度：</text>
+    <input name='latitude' placeholder="请点击上方按钮获取位置信息" type='text' value='{{latitude}}'/>
+  </view>
+
+  <!-- 商店照片 -->
+  <view class="shopPic">
+    <view class="tips">商店照片</view>
+    <button bindtap='chooseImage' type="primary" plain="true">点击上传图片</button>
+    <image src='{{spic}}'></image>
+  </view>
+
+  <!-- 提交信息 -->
+  <button form-type='submit' type="primary">注册</button>
+</form>

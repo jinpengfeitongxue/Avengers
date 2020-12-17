@@ -1,0 +1,11 @@
+<!--pages/ewm2/ewm2.wxml-->
+<image src="/icon/shop.jpg" class="ss"></image>
+<view class="txt">
+  <view class="t1">提货码</view>
+  <view class="t2">{{dthm.thm}}</view>
+  <view class="t3">————————</view>
+</view>
+<view class="in">
+  <text>你的商品已经被取走啦!</text>
+</view>
+<view class="but" bindtap="gget">{{get}}</view>

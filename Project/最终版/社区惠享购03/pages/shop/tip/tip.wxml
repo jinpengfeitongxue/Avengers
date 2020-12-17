@@ -1,0 +1,27 @@
+<!--pages/tip/tip.wxml-->
+
+<view class="box-0">
+<view class="v1" style="color: #000;width:150px;margin-left:30%">用户留言</view>
+<view wx:for="{{arr}}" wx:for-index="index" class="d1">
+  <view wx:if="{{item.sid==sid}}" class="d0" style="font-color: #D1E231"> 
+  <view class="v2">{{item.text}}</view>
+  <view class="vv">留言时间：{{item.ttime}}</view>
+  </view>
+</view>
+<view bindtap="speak">
+  <text class="v3">我有话说</text>
+</view>
+</view>
+
+<view class="{{show?'show1':'show2'}}">
+  <view class="box-1" bindtap="sub"></view>
+  <view class="box-2" >
+<form>
+  <textarea class="text"  bindblur="gtext"></textarea>
+</form>
+<view  bindtap="close" class="but">发布</view>
+</view>
+
+</view>
+
+

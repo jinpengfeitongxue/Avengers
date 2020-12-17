@@ -1,0 +1,17 @@
+<view class="home">
+  <view class="all">
+    <view class="shop" wx:for="{{shop}}" wx:key="index">
+      <image src="{{item.gimgsrc}}"></image>
+      <view class="message">
+          <view class="title">{{item.gtitle}}</view>
+          <view class="residue">剩余：{{item.gresidue}}</view>
+          <view class="price">{{item.gprice}}元/{{item.gunit}}</view>
+          <button size="mini" style="font-size:30rpx" bindtap="deleteGoods" data-id="{{item.gid}}">删除</button> 
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{shopId?true:false}}">
+    <image src="../../images/addplus.png" class="add" bindtap="gotoUpload"></image>
+  </view>
+  
+</view>

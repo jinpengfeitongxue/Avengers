@@ -1,0 +1,64 @@
+/* miniprogram/pages/dpay/dpay.wxss */
+.goods{
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 10px 10px 10px 10px;
+  float: left;
+  background-color: #F2F5F5;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.goods image{
+  width: 90px;
+  height: 90px;
+  margin-left: 5%;
+  margin-top: 5px;
+  border-radius:50%; 
+  float: left;
+}
+.tit{
+  width: 100%;
+  color: white;
+  background-color: #F2F5F5;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(34, 33, 32);
+  margin-bottom: 20px;
+}
+.t1{
+  float: left;
+  margin-left: 15%;
+  margin-top: 15px;
+  font-size: 20px;
+}
+.t2{
+  float: left;
+  margin-left: 50%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.mon{
+  width: 80%;
+  height: 40px;
+  margin-left:10% ;
+  margin-top: 10px;
+  color:rgb(23, 24, 22);
+  font-size: 30px;
+  background-color: green;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+
+}
+.ff{
+  width: 80%;
+  height: 40px;
+  margin-left:10% ;
+  margin-top: 10px;
+  color:rgb(23, 24, 22);
+  font-size: 30px;
+  background-color: green;
+  text-align: center;
+  border-radius: 20px 20px 20px 20px;
+  background-color: hotpink;
+}

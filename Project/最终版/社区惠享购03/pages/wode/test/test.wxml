@@ -1,0 +1,23 @@
+<view>
+  <image src="../../../icon/back.png" mode="aspectFit" class="img"></image>
+</view>
+<form bindsubmit="formSubmit">
+<textarea class="banner" placeholder="分享新鲜事……" value='{{gtitle}}' bindblur='textBlur'></textarea>
+<!-- 上传两张图片 -->
+<view class='upImv'>
+    <view class="addImv">
+      <!--这个是已经选好的图片-->
+      <view wx:for="{{detail}}" wx:key="key" class="upFile" bindtap="showImageDetail" style="border-radius: 5px" data-id="{{index}}">
+        <image class="itemImv" src="{{item}}"></image>
+        <view class="closeView" catchtap="deleteImvDetail">
+          <image class="closeImv" src="../../../icon/垃圾桶.png" mode="scaleToFill" data-id="{{index}}"></image>
+        </view>
+      </view>
+      <!--这个是选择图片-->
+      <view class="chooseView" bindtap="chooseImageTap" wx:if="{{chooseViewShowDetail}}">
+        <image class="chooseImv" src="../../../icon/adda.png"></image>
+      </view>
+    </view>
+  </view>
+<button class="btn" form-type='submit'>发表</button>
+</form>

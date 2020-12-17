@@ -1,0 +1,16 @@
+<view class="search">
+  <input placeholder="请输入你有搜索的内容" value="{{searchValue}}" bindinput="searchValueInput" bindconfirm="confirm"/>
+  <image src="../../../images/images/search.png" bindtap="suo"></image>
+</view>
+<view wx:if="{{click}}">
+<view style=" text-align: center" wx:if="{{shopdata=='failed register'}}">
+ 什么都没有搜到~
+</view>
+<view wx:else> 
+ <view class="div" wx:for="{{shopdata}}" wx:key="index" bindtap="gotoShop" data-id="{{item.sid}}">
+  <image src="../../../images/images/shop.png"></image>
+  <view class="shop">{{item.sshopname}}</view>
+  <view class="add">{{item.sadd}}</view>
+  </view>
+</view>
+</view>

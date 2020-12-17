@@ -1,0 +1,19 @@
+<!--pages/wode/friend/other/other.wxml-->
+<view class="img">
+  <image src="../../../../icon/timg.jpg"></image>
+</view>
+<view>
+    <image class="it" src="{{detail[0].shimg}}" mode="cover"></image>
+</view>
+<view class="box" wx:for="{{detail}}" wx:key="index" bindtap="gode" data-id='{{item.shid}}'>
+  <image class="touxiang" src='{{item.shimg}}'></image>
+  <view class="title">{{item.shname}}</view>
+  <view class="time">{{item.stime}}</view>
+  <view class='content'><text>{{item.shtext}}</text></view>
+  <view class="pic" wx:if="{{item.imgid}}">
+    <image src="{{item.pic1}}" class="pic1"></image>
+    <image src="{{item.pic2}}" class="pic2"></image>
+    <image src="{{item.pic3}}" class="pic3"></image>
+  </view>
+  <view class="other" wx:else></view>
+</view>

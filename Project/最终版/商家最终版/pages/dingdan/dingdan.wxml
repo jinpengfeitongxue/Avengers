@@ -1,0 +1,62 @@
+
+<!-- 切换栏 -->
+<view class="swiper-tab">
+  <block wx:for="{{swipertab}}" wx:key="sptab">
+    <view class="swiper-tab-list {{currtab == item.index ? 'on' : ''}}" data-current="{{item.index}}" bindtap="tabSwitch">{{item.name}}</view>
+  </block>
+</view>
+<swiper current="{{currtab}}" class="swiper-box" duration="300" style="height:{{height}}px" bindchange="tabChange">
+  <!-- 已付款 -->
+  <swiper-item>
+    <scroll-view class="hot-box" scroll-y="true">
+      <view  class="orderDetails" wx:for="{{paidOrder}}">
+        <view class="orderListTitle">
+          <text>订单号:</text>
+          <text class="userName">{{item.usid}}</text>
+          <text class="orderStatus">已付款</text>
+        </view>
+        <view class="orderListDetails">
+          <view class="productImg">
+            <image src="{{item.g[0].gimgsrc}}" background-size="cover"></image>
+          </view>
+          <view class="productInfo">
+            <view class="productTitle">下单时间: {{item.dtime}}</view>
+            <text>购买数量：{{item.dsum}}</text>
+            <view><text>提货码：{{item.dma}}</text></view>
+          </view>
+        </view>
+        <view class="productCount">
+          <view>
+            <text>小计：￥{{item.dsum * item.g[0].gprice}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!-- 已完成 -->
+  <swiper-item>
+    <scroll-view class="hot-box" scroll-y="true">
+      <view class="orderDetails" wx:for="{{alreadyOrder}}">
+        <view class="orderListTitle">
+          <text>订单号:</text>
+          <text class="userName">{{item.usid}}</text>
+          <text class="orderStatus">交易完成</text>
+        </view>
+        <view class="orderListDetails">
+          <view class="productImg">
+            <image src="{{item.g[0].gimgsrc}}" background-size="cover"></image>
+          </view>
+          <view class="productInfo">
+            <view class="productTitle">时间: {{item.dtime}}</view>
+            <text class="productPrice">购买数量：{{item.dsum}}</text>
+          </view>
+        </view>
+        <view class="productCount">
+          <view>
+             <text>小计：￥{{item.dsum * item.g[0].gprice}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

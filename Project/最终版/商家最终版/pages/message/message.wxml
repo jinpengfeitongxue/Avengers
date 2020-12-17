@@ -1,0 +1,14 @@
+<!--pages/message/message.wxml-->
+<!-- <view>pages/message/message.wxml</view> -->
+<view>
+  <image class="backgroundImg"></image>
+    <view class="message">
+      <view class="tlist" wx:for="{{tlist}}">
+        <view class="time">
+          <image src="/images/shop-info/time.jpg"></image>
+          {{item.ttime}}
+        </view>
+        <text class="txt">{{item.text}}</text>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/dingdan/dd1/dd1.wxml-->
+<wxs module="filters" src="../filter.wxs"></wxs>
+<view class="box">
+<view class="{{0==onhead1?'head':'helse'}}" bindtap="hd1">待支付{{res}}</view>
+<view class="head" bindtap="hd3">待提货</view>
+<view class="head" bindtap="hd4">已提货</view>
+</view>
+<view class="bdiv">
+  <view wx:for="{{carts}}" wx:for-index="index"  >
+  <view wx:if="{{item.cout!=0}}" class="bbdiv" style="display:{{1==onhead1?'block':'none'}}">
+    <view class="bbdiv1">
+    <view class="tmt">{{item.time}}</view>
+    <view class="tex">待支付</view>
+    </view>
+    <view class="bbdiv2" bindtap="toddxq" data-index="{{index}}">
+    <view wx:for="{{item.goods}}" data-index="{{index}}">
+    <view wx:if="{{index < 3}}">
+      <image  src="{{item.image}}" style="display:{{1==onhead1?'block':'none'}}" class="img1"></image>
+    </view>
+    <text wx:if="{{item==4}}">更多</text>
+    </view>
+    <view class="price">￥{{filters.toFix(item.price)}}</view>
+    <view class="cout">共{{item.goods.length}}件商品</view>
+    </view>
+    <text class="did">DID:{{item.dnum}}</text>
+    <view class="bbdiv3">
+      <view bindtap="topay" data-index="{{index}}">去付款</view>
+    </view>
+  </view>
+</view>
+</view>

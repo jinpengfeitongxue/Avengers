@@ -1,0 +1,125 @@
+#cart{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+#cart .scroll{
+  width: 100%;
+  height: 92vh;
+}
+#cart .noneData{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+#cart .noneData text{
+  font-size: 30rpx;
+}
+#cart .noneData .buttom{
+  padding: 20rpx 10rpx;
+  width: 150rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  background-color: #327442;
+  color: #fff;
+}
+#cart .cart-buy{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  font-size: 35rpx;
+}
+#cart .cart-buy .buy-box{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#cart .cart-buy .buy-box .total{
+  margin-right: 10rpx;
+}
+#cart .cart-buy .buy-box .total text{
+  margin-right:20rpx ;
+}
+#cart .cart-buy .buy-box .total text:nth-child(2){
+  color: #FF0000;
+}
+#cart .cart-buy .buy-box .to-buy{
+  width: 210rpx;
+  height: 100%;
+  background-color:#FF0000;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+}#cart{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+#cart .scroll{
+  width: 100%;
+  height: 92vh;
+}
+#cart .noneData{
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+#cart .noneData text{
+  font-size: 30rpx;
+}
+#cart .noneData .buttom{
+  padding: 20rpx 10rpx;
+  width: 150rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  background-color: #4C9673;
+  color: #fff;
+}
+#cart .cart-buy{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  font-size: 35rpx;
+}
+#cart .cart-buy .buy-box{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#cart .cart-buy .buy-box .total{
+  margin-right: 10rpx;
+}
+#cart .cart-buy .buy-box .total text{
+  margin-right:20rpx ;
+}
+#cart .cart-buy .buy-box .total text:nth-child(2){
+  color: #4C9673;
+}
+#cart .cart-buy .buy-box .to-buy{
+  width: 210rpx;
+  height: 100%;
+  background-color:#4C9673;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+}

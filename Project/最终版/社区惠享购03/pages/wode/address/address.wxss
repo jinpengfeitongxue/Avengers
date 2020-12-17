@@ -1,0 +1,84 @@
+image{
+  width:70rpx;
+  height:70rpx;
+  float: left;
+}
+.text{
+  font-size: large;
+}
+.container{
+  padding:300rpx 0;
+}
+.item{
+  width: 100%;
+  height: 140rpx;
+  background: white;
+  position: relative;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.address{
+  position: absolute;
+  width: 80%;
+  left: 30rpx;
+  top: 20rpx;
+  font-size:28rpx;
+  line-height:36rpx;
+  display: inline-block;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.name{
+  position: absolute;
+  left: 30rpx;
+  top: 80rpx;
+  color:#888888;
+  font-size:25rpx;
+}
+.tel{
+  position: absolute;
+  left: 150rpx;
+  top: 80rpx;
+  color:#888888;
+  font-size:25rpx;
+}
+.delete{
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+  float: right;
+  margin-top: 50rpx;
+  margin-right: 70rpx;
+}
+.eidt{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 300rpx;
+}
+
+.add{
+  width:100%;  
+  height: 106rpx;
+  background-color:#fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding:15rpx 15rpx 30rpx 40rpx;
+  border-top:1rpx solid #e0e0e0;
+}
+.add .right{
+  width:25rpx;
+  float:right;
+  margin-right:20rpx;
+  padding-top:15rpx;
+  color:#e0e0e0;
+}
+.text{
+  float:left;
+  margin-top:20rpx;
+}
+.left{
+  padding-top: 5rpx;
+  float:left;
+}

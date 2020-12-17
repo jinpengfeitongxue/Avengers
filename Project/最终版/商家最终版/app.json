@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/login/register/register",
+    "pages/dingdan/dingdan",
+    "pages/message/message"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/shoplist1.jpg",
+        "selectedIconPath": "images/shoplist.jpg",
+        "text": "商品信息"
+      },
+      {
+        "pagePath": "pages/dingdan/dingdan",
+        "iconPath": "images/dingdan.jpg",
+        "selectedIconPath": "images/dingdan1.jpg",
+        "text": "订单记录"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "iconPath": "images/icon/login-off.jpg",
+        "selectedIconPath": "images/icon/login.jpg",
+        "text": "登录"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
